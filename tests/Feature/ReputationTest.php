@@ -17,7 +17,7 @@ class ReputationTest extends TestCase
     /**
      * Fetch current reputation points on class initialization.
      */
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
         $this->points = config('council.reputation');
