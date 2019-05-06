@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\File;
 
 class InstallCommandTest extends TestCase
 {
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
 
@@ -17,7 +17,7 @@ class InstallCommandTest extends TestCase
         config(['app.key' => '']);
     }
 
-    public function tearDown()
+    public function tearDown():void
     {
         parent::tearDown();
 
